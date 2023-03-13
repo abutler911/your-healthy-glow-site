@@ -49,6 +49,11 @@
     />
     <link rel="manifest" href="./public/favicon_io/site.webmanifest" />
     <link rel="stylesheet" href="./public/css/styles.css" />
+    <link
+      href="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.css"
+      rel="stylesheet"
+    />
+    <script src="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.js"></script>
   </head>
 
   <body>
@@ -63,7 +68,7 @@
       <nav class="navbar navbar-expand-lg">
         <img
           id="logo"
-          src="./public/imgs/navbar-logo-yhg.png"
+          src="./public/imgs/navbar-logo.png"
           alt="Activated collagen product logo"
         />
 
@@ -82,7 +87,7 @@
         <div class="collapse navbar-collapse" id="navbarNav">
           <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
             <li class="nav-item">
-              <a class="nav-link" href="#ingredients">What's in it?</a>
+              <a class="nav-link headline" href="#ingredients">What's in it?</a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="#featured-products">Products</a>
@@ -97,6 +102,9 @@
             </li>
             <li class="nav-item">
               <a class="nav-link" href="#testimonials">Testimonials</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#consultants">Become a Consultant</a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="#influencers">Influencers</a>
@@ -116,7 +124,9 @@
         <div class="row">
           <div class="col-md-6">
             <img
-              class="img-fluid main-image"
+              data-aos="fade"
+              data-aos-duration="1500"
+              class="main-image"
               src="./public/imgs/collagen-bottle.png"
               alt=""
             />
@@ -124,12 +134,11 @@
 
           <div class="col-md-6">
             <b class="badge"> Activate. Replenish. Maintain. </b>
-            <!-- <div class="main-title"> -->
+
             <h1 class="main-title">
               True<span class="bold">Science</span>® Liquid Collagen
             </h1>
-            <!-- </div> -->
-            <!-- <div id="main-description" class="justify-text"> -->
+
             <p class="justify-text">
               Get healthy, glowing skin with a delicious blend that activates,
               replenishes, and maintains collagen to support firmness and
@@ -139,26 +148,38 @@
               For more information and to shop for products, click the button
               below.
             </p>
-            <!-- </div> -->
-            <!-- <div class="icon-container"> -->
+
             <img
+              data-aos="fade"
+              data-aos-duration="1500"
               class="img-fluid"
               id="health-icons"
               src="./public/imgs/icon-images/three-icons-cropped.png"
               alt=""
             />
-            <!-- </div> -->
-            <div class="text-center mt-5">
-              <a
-                href="https://yourhealthyglow.lifevantage.com/us-en/shop/categories/collagen"
-                target="_blank"
-                ><button id="main-button" class="btn">Shop Now</button></a
-              >
+            <div class="row">
+              <div class="col-md-6">
+                <div class="text-center mt-5">
+                  <a
+                    href="https://yourhealthyglow.lifevantage.com/us-en/shop/categories/collagen"
+                    target="_blank"
+                    ><button id="main-button">Shop Now</button></a
+                  >
+                </div>
+              </div>
+              <div class="col-md-6">
+                <div class="text-center mt-5">
+                  <a href="https://bit.ly/3T82n47" target="_blank"
+                    ><button id="consultant-button">
+                      Sign Up As A Consultant
+                    </button></a
+                  >
+                </div>
+              </div>
             </div>
-            <!-- <div> -->
+            <hr />
             <p class="text-center" id="quote"></p>
             <p id="author"></p>
-            <!-- </div> -->
           </div>
         </div>
       </div>
@@ -172,13 +193,22 @@
         <div class="row">
           <div class="col-md-3">
             <img
+              data-aos="flip-right"
+              data-aos-duration="1100"
+              class="ingredients-image"
               src="./public/imgs/icon_Formosa-Ruby-Quinoa-Extract.png"
-              alt=""
+              alt="ruby quinoa extract picture"
             />
-            <h3 class="text-center ingredients-category-title">
+            <h3
+              data-aos="fade"
+              data-aos-duration="1100"
+              class="text-center ingredients-category-title"
+            >
               <strong>ACTIVATE</strong>
             </h3>
-            <h4 class="text-center"><strong>Ruby Quinoa Extract</strong></h4>
+            <h4 class="text-center">
+              <strong>Ruby Quinoa Extract</strong>
+            </h4>
             <p class="justify-text ingredients-category-description">
               Our grain extract unlocks your cells' potential to absorb collagen
               while simultaneously activating the natural synthesis of collagen.
@@ -187,8 +217,19 @@
             </p>
           </div>
           <div class="col-md-3">
-            <img src="./public/imgs/icon_Marine-Collagen.png" alt="" />
-            <h3 class="text-center ingredients-category-title">
+            <img
+              data-aos="flip-right"
+              data-aos-duration="1100"
+              class="ingredients-image"
+              src="./public/imgs/icon_Marine-Collagen.png"
+              alt="marine collagen picture"
+              loading="lazy"
+            />
+            <h3
+              data-aos="fade"
+              data-aos-duration="1100"
+              class="text-center ingredients-category-title"
+            >
               <strong>REPLENISH</strong>
             </h3>
             <h4 class="text-center"><strong>Fish Collagen Peptides</strong></h4>
@@ -201,8 +242,18 @@
             </p>
           </div>
           <div class="col-md-3">
-            <img src="./public/imgs/icon_Berry-and-Citrus-Extract.png" alt="" />
-            <h3 class="text-center ingredients-category-title">
+            <img
+              data-aos="flip-right"
+              data-aos-duration="1100"
+              class="ingredients-image"
+              src="./public/imgs/icon_Berry-and-Citrus-Extract.png"
+              alt="berry and citrus extract picture"
+            />
+            <h3
+              data-aos="fade"
+              data-aos-duration="1100"
+              class="text-center ingredients-category-title"
+            >
               <strong>MAINTAIN</strong>
             </h3>
             <h4 class="text-center">
@@ -218,8 +269,18 @@
             </p>
           </div>
           <div class="col-md-3">
-            <img src="./public/imgs/icon_Young-Ponkan-Fruit.png" alt="" />
-            <h3 class="text-center ingredients-category-title">
+            <img
+              data-aos="flip-right"
+              data-aos-duration="1100"
+              class="ingredients-image"
+              src="./public/imgs/icon_Young-Ponkan-Fruit.png"
+              alt="young ponkan fruit image"
+            />
+            <h3
+              data-aos="fade"
+              data-aos-duration="1100"
+              class="text-center ingredients-category-title"
+            >
               <strong>PURE</strong>
             </h3>
             <h4 class="text-center"><strong>Appleberry Flavor</strong></h4>
@@ -260,8 +321,12 @@
             </h3>
             <div>
               <img
+                data-aos="flip-left"
+                data-aos-duration="1000"
                 class="mb-3 product-image img-fluid"
+                id="collagen-bottle-image"
                 src="./public/imgs/collagen-bottle.jpg"
+                loading="lazy"
                 alt="bottle of activated liquid collagen product picture"
               />
             </div>
@@ -305,8 +370,12 @@
             </h3>
             <div>
               <img
+                data-aos="flip-left"
+                data-aos-duration="1000"
                 class="mb-3 product-image img-fluid"
+                id="essential-stack-image"
                 src="./public/imgs/collagen-nrf2.jpg"
+                loading="lazy"
                 alt="bottle of activated liquid collage and a bottle of NRF-2 side by side product picture"
               />
             </div>
@@ -351,7 +420,7 @@
           <hr />
 
           <div class="col-md-4">
-            <div class="card">
+            <div data-aos="flip-up" data-aos-duration="1000" class="card">
               <h6>
                 The Science Behind LifeVantage Truescience Liquid Collagen
               </h6>
@@ -363,14 +432,13 @@
                   src="https://www.youtube.com/embed/g93LdmVc9JI?controls=1&cc_load_poliy=1&cc_lang_pref=en"
                   title="YouTube video player"
                   frameborder="0"
-                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
                   allowfullscreen
                 ></iframe>
               </div>
             </div>
           </div>
           <div class="col-md-4">
-            <div class="card">
+            <div data-aos="flip-up" data-aos-duration="1000" class="card">
               <h6>
                 ABC News Investigative Report: Protandim Nrf2 Synergizer&trade;
               </h6>
@@ -382,7 +450,6 @@
                   src="https://www.youtube.com/embed/-dHxKOUxXxo"
                   title="YouTube video player"
                   frameborder="0"
-                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
                   allowfullscreen
                 ></iframe>
               </div>
@@ -391,6 +458,8 @@
           <div class="col-md-4">
             <div>
               <img
+                data-aos="flip-up"
+                data-aos-duration="1000"
                 class="img-fluid image"
                 id="comparison-chart"
                 src="./public/imgs/comparison-chart.webp"
@@ -402,345 +471,153 @@
       </div>
     </section>
 
-    <section class="photo-gallery" id="photo-gallery">
+    <section class="photo-gallery">
       <div class="container">
-        <!-- <div class="row">
+        <div class="row" id="photo-gallery">
           <h2 class="text-center mb-6 section-heading">
             Before & After Photos
           </h2>
           <hr />
-          <div class="col-md-6 mx-auto">
-            <div
-              id="carousel-control"
-              class="carousel slide"
-              data-bs-ride="carousel"
-            >
-              <div class="carousel-inner">
-                <div class="carousel-item active">
-                  <img
-                    src="./public/imgs/testimonials/testimonial1.jpg"
-                    class="d-block w-100 img-fluid img-thumbnail"
-                    alt="..."
-                  />
-                </div>
-                <div class="carousel-item">
-                  <img
-                    src="./public/imgs/testimonials/testimonial2.JPG"
-                    class="d-block w-100 img-fluid img-thumbnail"
-                    alt="..."
-                  />
-                </div>
-                <div class="carousel-item">
-                  <img
-                    src="./public/imgs/testimonials/testimonial3.JPG"
-                    class="d-block w-100 img-fluid img-thumbnail"
-                    alt="..."
-                  />
-                </div>
-                <div class="carousel-item">
-                  <img
-                    src="./public/imgs/testimonials/testimonial4.JPG"
-                    class="d-block w-100 img-fluid img-thumbnail"
-                    alt="..."
-                  />
-                </div>
-                <div class="carousel-item">
-                  <img
-                    src="./public/imgs/testimonials/testimonial5.JPG"
-                    class="d-block w-100 img-fluid img-thumbnail"
-                    alt="..."
-                  />
-                </div>
-                <div class="carousel-item">
-                  <img
-                    src="./public/imgs/testimonials/testimonial6.JPG"
-                    class="d-block w-100 img-fluid img-thumbnail"
-                    alt="..."
-                  />
-                </div>
-                <div class="carousel-item">
-                  <img
-                    src="./public/imgs/testimonials/testimonial7.png"
-                    class="d-block w-100 img-fluid img-thumbnail"
-                    alt="..."
-                  />
-                </div>
-                <div class="carousel-item">
-                  <img
-                    src="./public/imgs/testimonials/testimonial8.png"
-                    class="d-block w-100 img-fluid img-thumbnail"
-                    alt="..."
-                  />
-                </div>
-                <div class="carousel-item">
-                  <img
-                    src="./public/imgs/testimonials/testimonial9.png"
-                    class="d-flex align-center w-100 text-center img-fluid img-thumbnail"
-                    alt="..."
-                  />
-                </div>
-              </div>
-              <button
-                class="carousel-control-prev"
-                type="button"
-                data-bs-target="#carousel-control"
-                data-bs-slide="prev"
-              >
-                <span
-                  class="carousel-control-prev-icon"
-                  aria-hidden="true"
-                ></span>
-                <span class="visually-hidden">Previous</span>
-              </button>
-              <button
-                class="carousel-control-next"
-                id="carousel-control-next"
-                type="button"
-                data-bs-target="#carousel-control"
-                data-bs-slide="next"
-              >
-                <span
-                  class="carousel-control-next-icon"
-                  aria-hidden="true"
-                ></span>
-                <span class="visually-hidden">Next</span>
-              </button>
-            </div>
-          </div>
-        </div> -->
-
-        <div class="row">
-          <h2 class="text-center mb-6 section-heading">
-            Before & After Photos
-          </h2>
-          <hr />
-          <div class="col-md-4 mt-3 col-lg-3">
-            <img
-              src="./public/imgs/testimonials/testimonial1.jpg"
-              class="img-fluid img-thumbnail"
-              alt="image"
-            />
-          </div>
-
-          <!-- This can be used to have a single image displayed instead of a full image gallery - interacts with the index.js file -->
-          <!-- <div class="image-gallery">
-            <div class="col-md-12 mt-3 col-lg-12">
-              <img
-                src="./public/imgs/testimonials/testimonial1.jpg"
-                class="img-fluid img-thumbnail"
-                alt="image"
-              />
-            </div>
-          </div>
-          <div class="text-center">
-            <button class="btn mt-4" id="random-image-button">New Image</button>
-          </div> -->
-
-          <div class="col-md-4 mt-3 col-lg-3">
-            <img
-              src="./public/imgs/testimonials/testimonial2.JPG"
-              class="img-fluid img-thumbnail"
-              alt="image"
-            />
-          </div>
-          <div class="col-md-4 mt-3 col-lg-3">
-            <img
-              src="./public/imgs/testimonials/testimonial3.JPG"
-              class="img-fluid img-thumbnail"
-              alt="image"
-            />
-          </div>
-          <div class="col-md-4 mt-3 col-lg-3">
-            <img
-              src="./public/imgs/testimonials/testimonial4.JPG"
-              class="img-fluid img-thumbnail"
-              alt="image"
-            />
-          </div>
-          <div class="col-md-4 mt-3 col-lg-3">
-            <img
-              src="./public/imgs/testimonials/testimonial5.jpg"
-              class="img-fluid img-thumbnail"
-              alt="image"
-            />
-          </div>
-          <div class="col-md-4 mt-3 col-lg-3">
-            <img
-              src="./public/imgs/testimonials/testimonial6.jpg"
-              class="img-fluid img-thumbnail"
-              alt="image"
-            />
-          </div>
-          <div class="col-md-4 mt-3 col-lg-3">
-            <img
-              src="./public/imgs/testimonials/testimonial7.PNG"
-              class="img-fluid img-thumbnail"
-              alt="image"
-            />
-          </div>
-          <div class="col-md-4 mt-3 col-lg-3">
-            <img
-              src="./public/imgs/testimonials/testimonial8.PNG"
-              class="img-fluid img-thumbnail"
-              alt="image"
-            />
-          </div>
-          <div class="col-md-4 mt-3 col-lg-3">
-            <img
-              src="./public/imgs/testimonials/testimonial9.PNG"
-              class="img-fluid img-thumbnail"
-              alt="image"
-            />
-          </div>
-          <div class="col-md-4 mt-3 col-lg-3">
-            <img
-              src="./public/imgs/testimonials/testimonial10.PNG"
-              class="img-fluid img-thumbnail"
-              alt="image"
-            />
-          </div>
-          <div class="col-md-4 mt-3 col-lg-3">
-            <img
-              src="./public/imgs/testimonials/testimonial11.jpg"
-              class="img-fluid img-thumbnail"
-              alt="image"
-            />
-          </div>
-          <div class="col-md-4 mt-3 col-lg-3">
-            <img
-              src="./public/imgs/testimonials/testimonial12.jpg"
-              class="img-fluid img-thumbnail"
-              alt="image"
-            />
-          </div>
-          <div class="col-md-4 mt-3 col-lg-3">
-            <img
-              src="./public/imgs/testimonials/testimonial13.jpg"
-              class="img-fluid img-thumbnail"
-              alt="image"
-            />
-          </div>
-          <div class="col-md-4 mt-3 col-lg-3">
-            <img
-              src="./public/imgs/testimonials/testimonial14.jpg"
-              class="img-fluid img-thumbnail"
-              alt="image"
-            />
-          </div>
-          <div class="col-md-4 mt-3 col-lg-3">
-            <img
-              src="./public/imgs/testimonials/testimonial15.png"
-              class="img-fluid img-thumbnail"
-              alt="image"
-            />
-          </div>
-          <div class="col-md-4 mt-3 col-lg-3">
-            <img
-              src="./public/imgs/testimonials/testimonial16.jpg"
-              class="img-fluid img-thumbnail"
-              alt="image"
-            />
-          </div>
-          <div class="col-md-4 mt-3 col-lg-3">
-            <img
-              src="./public/imgs/testimonials/testimonial17.png"
-              class="img-fluid img-thumbnail"
-              alt="image"
-            />
-          </div>
-          <div class="col-md-4 mt-3 col-lg-3">
-            <img
-              src="./public/imgs/testimonials/testimonial18.png"
-              class="img-fluid img-thumbnail"
-              alt="image"
-            />
-          </div>
-          <div class="col-md-4 mt-3 col-lg-3">
-            <img
-              src="./public/imgs/testimonials/testimonial19.jpg"
-              class="img-fluid img-thumbnail"
-              alt="image"
-            />
-          </div>
-          <div class="col-md-4 mt-3 col-lg-3">
-            <img
-              src="./public/imgs/testimonials/testimonial21.png"
-              class="img-fluid img-thumbnail"
-              alt="image"
-            />
-          </div>
         </div>
       </div>
     </section>
 
-    <section class="testimonials" id="testimonials">
-      <div class="container my-6">
-        <div class="row testimonial-row">
+    <section class="testimonials">
+      <div class="container">
+        <div class="row" id="testimonials">
           <h2 class="text-center mb-6 section-heading">Testimonials</h2>
           <hr />
+        </div>
+      </div>
+    </section>
 
-          <div class="col-md-4">
-            <blockquote class="quote-border-left quote-border-right">
-              <p class="justify-text">
-                Softer skin, a glow, firm skin like my post pregnancy belly,
-                higher metabolism, helped with weight loss.
-              </p>
-            </blockquote>
+    <section class="consultants" id="consultants">
+      <div class="container my-4">
+        <div class="row">
+          <h2 class="text-center section-heading">
+            Do You Want To Become A Product Consultant And Make Money?
+          </h2>
+          <hr />
+          <div class="col-md-6">
+            <div class="mb-3">
+              <img
+                data-aos="fade"
+                data-aos-duration="1800"
+                class="img-fluid image"
+                id="influencer-image"
+                src="./public/imgs/influencer/LFVNCollagenCashSocial_1022Update_CollagenCash_STGLFST_02_Post01.jpg"
+                alt="a social media influencer holding a bottle of collagen and taking a selfie"
+              />
+            </div>
           </div>
 
-          <div class="col-md-4">
-            <blockquote class="quote-border-right quote-border-left">
-              <p class="justify-text">
-                My nails are very strong. Don't break or chip! My knees don't
-                hurt going up and down stairs!! My skin is softer and cellulite
-                in my legs has disappeared!! &#10084; &#10084; &#10084;
-              </p>
-            </blockquote>
-          </div>
+          <div class="col-md-6">
+            <h3 class="text-center">
+              Become An Independent Product Consultant
+            </h3>
+            <h2 class="free-trial-headline text-center">
+              The Ideal Side Hustle
+            </h2>
 
-          <div class="col-md-4">
-            <blockquote class="quote-border-left quote-border-right">
-              <p class="justify-text">
-                Love this collagen! Have tried powdered collagen but forgot
-                about it or doesn't taste great. Have seen so many awesome
-                improvements with this liquid collagen. Scar on my nose has
-                diminished a lot!! Tried all kinds of scar creams with little to
-                no change. My crepey skin on arms, neck and legs is gone!!
-                Turkey neck gone! Definitely not going to stop using it!
-                &#10084;
-              </p>
-            </blockquote>
-          </div>
+            <hr />
+            <p
+              data-aos="fade"
+              data-aos-duration="1800"
+              class="lead justify-text p-2"
+            >
+              It's time to take action! Whether you're searching for additional
+              income or a full-time career, we provide the platform and
+              resources to help you launch your own business. Don't ignore that
+              entrepreneurial itch any longer. Over a decade ago, we made a
+              daring decision to remove our successful products from store
+              shelves. We felt that being in big box stores went against our
+              values. Instead of lining our pockets, we began rewarding our
+              customers. We realized our success was not due to fancy packaging
+              or expensive advertising, but because our customers were happy
+              with the results and shared their experiences with others. So, why
+              not pay them for it? We established an opportunity for any
+              customer to make money by becoming a LifeVantage Consultant. Join
+              us now and start earning!
+            </p>
+            <p
+              data-aos="fade"
+              data-aos-duration="1800"
+              class="lead justify-text p-2"
+            >
+              Fill out and submit the form below if you would like additional
+              information or, if you are ready to get started as a consultant,
+              click the button below
+            </p>
+            <div class="col-md-12">
+              <div class="text-center mt-5">
+                <a href="https://bit.ly/3T82n47" target="_blank"
+                  ><button id="consultant-button">
+                    Sign Up As A Consultant
+                  </button></a
+                >
+              </div>
+            </div>
+            <hr />
+            <h2 class="free-trial-headline text-center">
+              Request More Information
+            </h2>
+            <div>
+              <form
+                name="consultant"
+                method="post"
+                data-netlify="true"
+                action="/success"
+              >
+                <!-- Name input -->
+                <div class="form-outline mb-4">
+                  <input
+                    type="text"
+                    id="name"
+                    name="name"
+                    class="form-control"
+                  />
+                  <label class="form-label" for="name">Name</label>
+                </div>
 
-          <div class="col-md-4">
-            <blockquote class="quote-border-right quote-border-left">
-              <p class="justify-text">
-                My neck skin is so much tighter!! My skin is more hydrated!!
-                Less wrinkles!!!
-              </p>
-            </blockquote>
-          </div>
+                <!-- Email input -->
+                <div class="form-outline mb-4">
+                  <input
+                    type="email"
+                    id="email"
+                    name="email"
+                    class="form-control"
+                  />
+                  <label class="form-label" for="email">Email Address</label>
+                </div>
+                <!-- Social Media -->
+                <div class="form-outline mb-4">
+                  <input
+                    type="phone"
+                    id="phone-number"
+                    name="phone-number"
+                    class="form-control"
+                  />
+                  <label class="form-label" for="phone-number"
+                    >Phone Number</label
+                  >
+                </div>
+                <!-- Message input -->
+                <div class="form-outline mb-4">
+                  <textarea
+                    class="form-control"
+                    id="message"
+                    name="message"
+                    rows="4"
+                  ></textarea>
+                  <label class="form-label" for="message">Message</label>
+                </div>
 
-          <div class="col-md-4">
-            <blockquote class="quote-border-left quote-border-right">
-              <p class="justify-text">
-                My nails and hair are incredibly thicker! Also, my fine lines
-                are minimized, and eye lids lifted slightly. MOST exciting, the
-                dermatitis I had since January (horrible rash with itching
-                burning blisters all over chin/jaw plus hundreds of bumps on
-                forehead) is 90% GONE! I tried all sorts of things and nothing
-                worked - I never expected the collagen to do this but I am so
-                grateful! And my eyelashes are growing awesome too!
-              </p>
-            </blockquote>
-          </div>
-
-          <div class="col-md-4">
-            <blockquote class="quote-border-right quote-border-left">
-              <p class="justify-text">
-                Outside healthier skin, the amazing joint pain reduction.
-              </p>
-            </blockquote>
+                <!-- Submit button -->
+                <div class="text-center">
+                  <button type="submit" class="btn btn-block mb-4">Send</button>
+                </div>
+              </form>
+            </div>
           </div>
         </div>
       </div>
@@ -754,6 +631,8 @@
           <div class="col-md-6">
             <div class="mb-3">
               <img
+                data-aos="fade"
+                data-aos-duration="1800"
                 class="img-fluid image"
                 id="influencer-image"
                 src="./public/imgs/influencer/influencer.png"
@@ -769,7 +648,11 @@
             </h2>
 
             <hr />
-            <p class="lead justify-text p-2">
+            <p
+              data-aos="fade"
+              data-aos-duration="1800"
+              class="lead justify-text p-2"
+            >
               Attention all social media influencers! Are you looking for a
               game-changing product that will take your social media game to the
               next level? Look no further than TrueScience liquid collagen!
@@ -854,6 +737,8 @@
           <hr />
           <div class="col-md-6 mb-4">
             <img
+              data-aos="fade"
+              data-aos-duration="1800"
               class="img-fluid image mb-3"
               src="./public/imgs/IMG_0553.jpg"
               alt="a girl with her hands on the sides of her face"
@@ -863,6 +748,8 @@
             <div class="row">
               <div class="col mx-auto">
                 <img
+                  data-aos="flip-left"
+                  data-aos-duration="1200"
                   src="./public/imgs/TS-Collagen-Improve-skin-moisture.png"
                   alt=""
                   class="img-fluid mb-3 why-collagen-icons"
@@ -873,6 +760,8 @@
               </div>
               <div class="col mx-auto">
                 <img
+                  data-aos="flip-left"
+                  data-aos-duration="1200"
                   src="./public/imgs/TS-Collagen-Protection-icon.png"
                   alt=""
                   class="img-fluid mb-3 why-collagen-icons"
@@ -883,6 +772,8 @@
               </div>
               <div class="col mx-auto">
                 <img
+                  data-aos="flip-left"
+                  data-aos-duration="1200"
                   src="./public/imgs/TS-Collagen-Reduce-Wrinkles.png"
                   alt=""
                   class="img-fluid mb-3 why-collagen-icons"
@@ -893,7 +784,7 @@
               </div>
             </div>
             <hr />
-            <p class="justify-text">
+            <p data-aos="fade" data-aos-duration="1800" class="justify-text">
               Collagen, a vital protein, constitutes around 25-35% of all
               proteins in the human body, synthesized from amino acids obtained
               through our diets. After 30, collagen production decreases,
@@ -906,7 +797,7 @@
               quality, and mental/brain health.
             </p>
 
-            <p class="justify-text">
+            <p data-aos="fade" data-aos-duration="1800" class="justify-text">
               To achieve a youthful appearance and healthy body, stress
               reduction, proper sleep, a nutritious diet, and a skincare routine
               are essential. Collagen supplements, available in various forms,
@@ -974,8 +865,21 @@
         <div class="row">
           <div class="col-md-12">
             <p class="text-center">&copy; Copyright 2023 | Your Healthy Glow</p>
-
-            <p class="text-center">
+          </div>
+        </div>
+        <div class="row social-icons mb-6">
+          <div class="col-md-12 social-icons mb-6">
+            <i class="bi bi-facebook"></i>
+            <i class="bi bi-instagram"></i>
+            <i class="bi bi-youtube"></i>
+            <i class="bi bi-envelope"></i>
+            <i class="bi bi-pinterest"></i>
+            <i class="bi bi-tiktok"></i>
+          </div>
+        </div>
+        <div class="row mt-6">
+          <div class="col-md-12 mt-6">
+            <p class="text-center mt-6">
               *DISCLOSURE: These statements have not been evaluated by the Food
               and Drug Administration. These products are not intended to
               diagnose, treat, cure or prevent any disease.
@@ -994,6 +898,6 @@
       integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
       crossorigin="anonymous"
     ></script>
-    <script src="index.js"></script>
+    <script src="./public/js/index.js"></script>
   </body>
 </html>
