@@ -1,0 +1,453 @@
+:root {
+  --light-pink: rgba(241, 170, 198, 0.5);
+  --dark-pink: rgba(237, 170, 198, 0.7);
+  --red: #822003;
+  --brown: rgb(50, 22, 22);
+  --light-brown: rgba(50, 22, 22, 0.5);
+  --green: #0c5c08;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+* {
+  margin: 0;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+body {
+  font-family: "Playfair Display", serif;
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+  font-size: 1.2em;
+}
+
+img,
+picture,
+video,
+canvas,
+svg {
+  display: block;
+  max-width: 100%;
+}
+
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  overflow-wrap: break-word;
+}
+
+#root,
+p {
+  font-size: 1.2em;
+}
+
+.badge {
+  background-color: rgb(0, 167, 224);
+  font-size: 0.7em;
+  height: auto;
+  margin-top: 25vh;
+}
+
+.main {
+  background-color: #fff;
+  padding: 10px;
+}
+
+.ingredients {
+  background-image: radial-gradient(
+    rgba(158, 119, 110, 0.5),
+    rgba(255, 255, 255, 1)
+  );
+}
+
+.featured-products {
+  background-color: rgba(212, 212, 212, 0.2);
+  padding: 10px;
+}
+
+.comparison {
+  background-color: #fff;
+  padding: 10px;
+}
+
+.photo-gallery {
+  background-color: rgba(212, 212, 212, 0.2);
+  padding: 10px;
+}
+
+.testimonials {
+  background-image: radial-gradient(
+    rgba(158, 119, 110, 0.5),
+    rgba(255, 255, 255, 1)
+  );
+}
+
+.influencers {
+  background-color: rgba(212, 212, 212, 0.2);
+  padding: 10px;
+}
+
+.why {
+  background-color: #fff;
+  padding: 10px;
+}
+
+.resource {
+  background-color: rgba(212, 212, 212, 0.2);
+  padding: 10px;
+}
+
+.footer {
+  background-color: #fff;
+  font-size: 0.8em;
+  padding: 10px;
+}
+
+.main-title {
+  font-size: 2.5em;
+}
+
+#health-icons {
+  animation: fadeIn 1s ease forwards;
+}
+
+.social-icons {
+  align-items: center;
+  justify-content: center;
+  display: flex;
+}
+
+.social-icons i {
+  margin-left: 10px;
+  font-size: 1.9em;
+}
+
+#main-description p {
+  font-size: 1.3em;
+}
+
+#main-button,
+#consultant-button {
+  font-size: 1.1em;
+  font-weight: 600;
+  border: 2px solid rgba(255, 84, 106, 0.2);
+  width: 100%;
+  height: 3em;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  border-radius: 7px;
+}
+
+#main-button {
+  background-color: var(--dark-pink);
+  color: #000;
+  border: none;
+}
+
+#main-button:hover {
+  background-color: white;
+  color: black;
+  transition: 0.6s ease;
+}
+
+#consultant-button {
+  background-color: #fff;
+  color: black; /* Matching text color */
+}
+
+#consultant-button:hover {
+  background-color: var(--dark-pink);
+  color: #fff;
+  transition: 0.6s ease;
+}
+
+#shop-now:hover {
+  color: var(--light-pink);
+}
+
+.product-image {
+  border: 1px solid rgba(255, 84, 106, 0.1);
+  box-shadow: rgba(255, 84, 106, 0.1) 0px 5px 15px;
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+}
+
+.tagline {
+  font-family: "Playfair Display", serif;
+  color: rgba(0, 0, 0, 1);
+  font-size: 1.4em;
+  text-align: center;
+}
+
+.btn {
+  background-color: var(--brown);
+  color: var(--dark-pink);
+  font-size: 1.3em;
+  font-weight: 600;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+.btn:hover {
+  background-color: var(--dark-pink);
+  color: var(--brown);
+}
+
+.section-heading {
+  font-family: "Playfair Display", serif;
+  color: rgba(0, 0, 0, 1);
+  font-size: 1.9em;
+  margin-top: 20px;
+}
+
+.subheading {
+  font-family: "Playfair Display", serif;
+  color: var(--dark-pink);
+  font-size: 1.6em;
+  margin-bottom: 20px;
+}
+
+.image {
+  border-radius: 5px;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  height: 100%;
+  width: 100%;
+}
+
+.free-trial-headline {
+  color: var(--dark-pink);
+  font-size: 2em;
+  font-weight: 700;
+}
+
+.thirty-day-supply {
+  font-size: 1em;
+  font-family: arial;
+  text-align: center;
+}
+
+blockquote {
+  border-radius: 5px;
+}
+
+blockquote p {
+  display: inline;
+  font-size: 1.2em;
+}
+
+.resource {
+  margin-bottom: 30px;
+}
+
+.resource a {
+  text-decoration: none;
+}
+
+.resource h3 {
+  font-size: 1.2em;
+  color: rgba(0, 0, 0, 1);
+}
+
+.bi {
+  font-size: 1.4em;
+  color: var(--dark-pink);
+  margin-right: 10px;
+}
+
+/* Helper classes */
+
+.bold {
+  font-weight: 900;
+}
+
+.brown-header {
+  height: 140px;
+  background-color: var(--brown);
+}
+
+.container-fluid {
+  height: 100%;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#logo {
+  height: 60px;
+  width: auto;
+  margin: 0 auto;
+  transform: rotate(-15deg);
+  padding-bottom: 8px;
+}
+
+.nav-link:hover {
+  color: var(--light-pink);
+  transition: 0.2s;
+}
+
+.navbar img {
+  width: 240px;
+  height: 90%;
+}
+
+/* form styling */
+
+.form-control {
+  height: 3em;
+  background-color: var(--light-brown);
+}
+
+.form-label {
+  font-family: "Playfair Display", serif;
+  color: #000;
+  font-size: 1.3em;
+}
+
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  max-width: 100%;
+  max-height: 100%;
+  margin: auto;
+  text-align: center;
+  margin-bottom: 20px;
+  background-color: var(--light-pink);
+  font-family: "Playfair Display", serif;
+}
+
+.card img {
+  border-radius: 5px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  margin-bottom: 10px;
+}
+
+.card h2 {
+  color: var(--dark-pink);
+}
+
+.card p {
+  font-size: 0.7em;
+}
+
+*/ .video-embed {
+  min-width: 280px;
+  min-height: 157px;
+  border-radius: 5px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+
+.why-collagen-icons {
+  width: 80px;
+  height: auto;
+  display: flex;
+  margin: 0 auto;
+  flex-direction: row;
+}
+
+/* header img {
+  height: 20vh;
+  width: 100%;
+} */
+
+.ingredients img {
+  width: 150px;
+  height: 150px;
+  margin: 0 auto;
+}
+
+.ingredients-category-title {
+  color: var(--brown);
+  font-size: 2.2em;
+}
+
+.ingredients-category-description {
+  padding: 12px;
+  font-size: 1.3em;
+}
+
+.ingredients-call-to-action {
+  margin-top: 20px;
+  font-size: 2.6em;
+  font-weight: 800;
+}
+
+.doc-links {
+  font-size: 0.9rem;
+}
+
+@media screen and (max-width: 768px) {
+  #main-button,
+  #consultant-button {
+    margin-bottom: 0;
+    padding: 10px 15px;
+  }
+
+  .main-title h1 {
+    font-size: 3em;
+  }
+
+  #comparison-chart {
+    margin-top: 30px;
+  }
+
+  .why-icon-text {
+    font-size: 0.8em;
+  }
+
+  .badge {
+    margin-top: -40px;
+  }
+}
+
+#backToTopBtn {
+  display: none;
+  position: fixed;
+  bottom: 15px;
+  left: 10px;
+  text-align: center;
+  z-index: 99;
+  font-size: 20px;
+  font-weight: 900;
+  border: none;
+  outline: none;
+  background-color: transparent;
+  opacity: 60%;
+  color: #000;
+  cursor: pointer;
+  padding: 15px;
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+}
+
+#backToTopBtn i {
+  color: var(--dark-pink);
+}
+
+#backToTopBtn i:hover {
+  color: #000;
+}
